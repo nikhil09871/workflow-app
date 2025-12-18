@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  height: 100vh;
+  background: #faf7f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  width: 360px;
+  background: #faf7f2;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.social-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.social-btn {
+  flex: 1; /* makes Google button same width as GitHub */
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e1da;
+  background: #f3efe9; /* SAME as GitHub */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+.social-btn.github {
+  background: #f3efe9;
+  border: 1px solid #e5e1da;
+}
+
+/* Icons */
+.social-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Last used (right side) */
+.last-used {
+  font-size: 13px;
+  color: #4f6ef7;
+  white-space: nowrap;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #999;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.password-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.password-row a {
+  font-size: 12px;
+  color: #4f6ef7;
+  text-decoration: none;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Row containing Google + Last used */
+.social-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Force SAME width for both buttons */
+.social-btn {
+  width: 100%;           /* full width like GitHub */
+  max-width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e1da;
+  background: #f3efe9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Prevent Google button from shrinking */
+.social-row .social-btn {
+  flex: 1;
+}
+
+/* Last used text */
+.last-used {
+  font-size: 13px;
+  color: #4f6ef7;
+  white-space: nowrap;
+}
+
